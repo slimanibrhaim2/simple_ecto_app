@@ -1,11 +1,10 @@
 import Config
 
 config :simple_ecto_app, SimpleEctoApp.Repo,
+  database: "simple_ecto_db",
   username: "postgres",
   password: "sliman",
-  database: "simple_ecto_db",
   hostname: "localhost",
-  show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
 config :simple_ecto_app,
